@@ -22,7 +22,7 @@ pipeline{
 
             steps{
                 script{
-                    account = docker.build("c0d8//account:${env.BUILD_ID}", "-f Dockerfile .")
+                    account = docker.build("c0d8/account:${env.BUILD_ID}", "-f Dockerfile .")
                 }
             }
 
